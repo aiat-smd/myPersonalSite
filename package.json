@@ -1,12 +1,12 @@
 {
-  "name": "gulp2",
+  "name": "persoalsite",
   "version": "1.0.0",
-  "description": "Gulp lesson",
-  "main": "index.js",
+  "description": "This is Aiat's personal site",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Mirlan Urzhanov",
+  "author": "Aiat isamidinov",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.12",
@@ -18,5 +18,9 @@
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
     "uglify": "^0.1.5"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.1.0"
   }
 }

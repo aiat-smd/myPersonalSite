@@ -1,14 +1,17 @@
 const checkbox = $("#checkbox");
 const body = $("body");
 const header = $("#header");
-const navItems = $(".navbar__item-link");
-const logo = $("#logo");
+const navItems = $(".nav-link");
+const navLink = $(".nav-linkk");
 
 checkbox.on("click", function () {
   body.toggleClass("dark");
-  header.toggleClass("dark");
   navItems.toggleClass("dark-nav");
-  logo.toggleClass("logo__img-dark");
-  logo.toggleClass("switch-logo");
+  navLink.toggleClass("dark-nav");
+
+  $("h1, h2, h3, h5, h6, .skills-left__desc").toggleClass("dark-nav");
 
 });
+
+AOS.init();
+

@@ -1,0 +1,145 @@
+.skills {
+  text-align: left;
+  color: #393B44;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding-top: 40px;
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-items {
+      width: 60px;
+      height: 60px;
+      margin: 0px 50px 50px 50px;
+      position: relative;
+      font-size: 2rem;
+      color: #00ADB5;
+      box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      line-height: 60px;
+      color: #393B44;
+      border-radius: 50%;
+      overflow: hidden;
+      z-index: 0;
+      background-color: #F1F3F8;
+    }
+
+    &-items:after {
+      content: " ";
+      position: absolute;
+      left: -8px;
+      bottom: -80px;
+      z-index: 1;
+      width: 70px;
+      height: 70px;
+      z-index: -1;
+      border: 1px solid #8D93AB;
+      border-radius: 50%;
+      background: linear-gradient(to bottom, rgb(214, 224, 240), rgb(141, 147, 171));
+      transition: all 0.3s;
+    }
+    
+    &-items:hover {
+      color: #00ADB5;
+    }
+
+    &-items:hover::after {
+      bottom: -5px;
+    }
+  }
+}
+
+@media(min-width:320px) {
+  .skills__icons {
+
+    &-items {
+      margin: 0px 8px 8px 8px;
+      width: 50px;
+      height: 50px;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media(min-width:992px) {
+  .skills__icons {
+
+    &-items {
+      margin: 0px 40px 40px 40px;
+      width: 60px;
+      height: 60px;
+      font-size: 2rem;
+    }
+  }
+}
+
+  .skills-right {
+
+  &__box {
+    // width: 360px;
+    height: 220px;
+    background-color: #F1F3F8;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #F1F3F8;
+    color: #8D93AB;
+    transition: 0.4s;
+    padding: 20px;
+    
+    &-text {
+      font-weight: 300;
+    }
+    
+    &-icon {
+      color: #00ADB5;
+      font-size: 1.5rem;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__box:hover {
+    background-color: #fff;
+    border: 1px solid #393B44;
+  }
+}
+
+@media(min-width: 769px) {
+  .skills-right {
+
+    &__box {
+      height: 260px;
+    }
+  }
+}
+
+@media(min-width: 992px) {
+  .skills-right {
+
+    &__box {
+      height: 260px;
+    }
+  }
+}
+
+@media(min-width: 1200px) {
+  .skills-right {
+
+    &__box {
+      height: 220px;
+    }
+  }
+}
+
+.skills-left {
+
+  &__desc {
+    line-height: 1.7;
+    font-weight: 300;
+  }
+}
+.skills-content {
+  align-items: center;
+}

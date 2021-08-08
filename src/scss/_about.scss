@@ -1,0 +1,47 @@
+.about {
+  text-align: center;
+  padding-top: 140px;
+  margin-bottom: 100px;
+  color: #8D93AB;
+}
+.about-content {
+  background-color: #F1F3F8;
+  margin-top: 60px;
+  padding: 30px 10px;
+  border-radius: 20px;
+}
+
+.about-year {
+
+  &__num {
+    font-size: 5rem;
+    color: #00ADB5;
+    margin-bottom: 0px;
+  }
+
+  &__text {
+    margin: 0 auto;
+    width: 150px;
+    color: #393B44;
+    font-weight: 500;
+  }
+}
+
+@media(max-width: 768px) {
+  .about-year__text {
+    margin-bottom: 40px;
+  }
+}
+
+.about-desc {
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+  }
+
+  &__text {
+    line-height: 1.7;
+  }
+}
